@@ -1,10 +1,12 @@
 import React, { useState } from 'react';
-import { View, Text, Pressable } from 'react-native';
+import { View, Text, Pressable, Image } from 'react-native';
 import { Search, Heart, MoreHorizontal } from 'lucide-react-native';
 import { LinearGradient } from 'expo-linear-gradient';
 import { useTheme } from '../../theme/ThemeProvider';
 import { ScreenContainer } from '../../components/ScreenContainer';
 import { SOSButton } from '../../components/SOSButton';
+import { Avatar } from '../../components/Avatar';
+import { articleCover } from '../../data/images';
 import { communityPosts, communityGroups, article } from '../../data/mock';
 
 const TABS = ['Feed', 'Grupos', 'Encontros', 'Meu perfil'] as const;
@@ -61,7 +63,11 @@ function FeedTab() {
           <Text style={[type.caption, { fontSize: 11.5, color: palette.textFaint, opacity: 0.85, marginTop: 8 }]}>{article.source}</Text>
           <Text style={[type.cardTitle, { color: palette.text, fontSize: 18, marginTop: 6, lineHeight: 23 }]}>{article.title}</Text>
         </View>
-        <LinearGradient colors={[colors.pastelGreen, colors.greyAzure]} style={{ height: 150 }} />
+        {articleCover ? (
+          <Image source={articleCover} style={{ height: 150, width: '100%' }} resizeMode="cover" />
+        ) : (
+          <LinearGradient colors={[colors.pastelGreen, colors.greyAzure]} style={{ height: 150 }} />
+        )}
         <View style={{ padding: 16 }}>
           <Text style={[type.body, { fontSize: 13, color: palette.textMuted, opacity: 0.85, lineHeight: 20 }]}>{article.body}</Text>
           <View style={{ flexDirection: 'row', alignItems: 'center', gap: 16, marginTop: 14, paddingTop: 12, borderTopWidth: 1, borderTopColor: palette.divider }}>
@@ -79,7 +85,7 @@ function FeedTab() {
         <View key={p.id} style={{ backgroundColor: palette.surface, borderWidth: 1, borderColor: palette.surfaceBorder, borderRadius: 18, padding: 16, marginBottom: p.id === communityPosts[communityPosts.length - 1].id ? 130 : 0 }}>
           <View style={{ flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between' }}>
             <View style={{ flexDirection: 'row', alignItems: 'center', gap: 10 }}>
-              <View style={{ width: 32, height: 32, borderRadius: 16, backgroundColor: colors.pastelGreen }} />
+              <Avatar person={p.avatar} name={p.author} size={32} />
               <View>
                 <View style={{ flexDirection: 'row', alignItems: 'center', gap: 7 }}>
                   <Text style={[type.bodySm, { fontSize: 13.5, color: palette.text, fontFamily: 'Lexend_500Medium' }]}>{p.author}</Text>

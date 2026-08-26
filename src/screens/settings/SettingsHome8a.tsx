@@ -3,6 +3,7 @@ import { View, Text, Pressable, ScrollView } from 'react-native';
 import { ChevronLeft, ChevronRight, Plus } from 'lucide-react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { useTheme } from '../../theme/ThemeProvider';
+import { Avatar } from '../../components/Avatar';
 import { useApp } from '../../state/AppContext';
 
 function Row({ title, sub, onPress, last }: { title: string; sub?: string; onPress?: () => void; last?: boolean }) {
@@ -44,7 +45,7 @@ export default function SettingsHome8a({ navigation }: any) {
         </Pressable>
 
         <View style={{ backgroundColor: palette.surface, borderWidth: 1, borderColor: palette.surfaceBorder, borderRadius: 18, padding: 18, flexDirection: 'row', alignItems: 'center', gap: 14 }}>
-          <View style={{ width: 48, height: 48, borderRadius: 24, backgroundColor: colors.pastelGreen }} />
+          <Avatar person="camila" name={state.parentName} size={48} />
           <View style={{ flex: 1 }}>
             <Text style={[type.title, { color: palette.text, fontSize: 20 }]}>{state.parentName}</Text>
             <Text style={[type.caption, { fontSize: 12, color: palette.textMuted, opacity: 0.75, marginTop: 2 }]}>camila@email.com · plano {state.plan === 'plus' ? 'Plus' : 'Base'}</Text>

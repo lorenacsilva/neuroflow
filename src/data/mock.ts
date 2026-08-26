@@ -49,6 +49,7 @@ export const communityPosts = [
     id: 'p1',
     group: 'Sono e hora de dormir',
     author: 'Renata M.',
+    avatar: null,
     title: 'Alguém mais tem dificuldade na troca de pijama?',
     body:
       'Aqui em casa a rotina de dormir trava sempre na troca de roupa. Testamos deixar o pijama escolhido desde a tarde e ajudou um pouco. Como vocês fazem?',
@@ -59,6 +60,7 @@ export const communityPosts = [
     id: 'p2',
     group: 'Primeiros passos com rotina',
     author: 'Diego F.',
+    avatar: 'diego' as const,
     title: 'Quadro de rotina visual mudou nossa manhã',
     body: 'Depois de 3 semanas usando ícones em vez de texto, as manhãs ficaram bem mais tranquilas por aqui.',
     replies: 8,
@@ -68,6 +70,7 @@ export const communityPosts = [
     id: 'p3',
     group: 'TDAH em casa',
     author: 'Camila S.',
+    avatar: 'camilaS' as const,
     title: 'Dia difícil hoje, alguém por perto?',
     body: 'Foi um daqueles dias. Só queria dividir com quem entende.',
     replies: 22,

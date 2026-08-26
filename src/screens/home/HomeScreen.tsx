@@ -8,6 +8,7 @@ import { Card } from '../../components/Card';
 import { CheckRow } from '../../components/CheckRow';
 import { Button } from '../../components/Button';
 import { SOSButton } from '../../components/SOSButton';
+import { Avatar } from '../../components/Avatar';
 import { useApp } from '../../state/AppContext';
 import { defaultTasks } from '../../data/mock';
 
@@ -29,9 +30,7 @@ export default function HomeScreen({ navigation }: any) {
 
   const AvatarRow = (
     <View style={{ flexDirection: 'row', alignItems: 'center', gap: 8 }}>
-      <View style={{ width: 40, height: 40, borderRadius: 20, borderWidth: 2, borderColor: colors.pastelGreen, backgroundColor: colors.pastelGreen, alignItems: 'center', justifyContent: 'center' }}>
-        <Text style={{ fontFamily: 'BricolageGrotesque_600SemiBold', color: colors.darkAzure }}>C</Text>
-      </View>
+      <Avatar person="camila" name={state.parentName} size={40} ring />
       <Pressable
         onPress={() => navigation.navigate('SettingsStack')}
         style={{ width: 40, height: 40, borderRadius: 20, backgroundColor: palette.surface, borderWidth: 1, borderColor: palette.surfaceBorder, alignItems: 'center', justifyContent: 'center' }}
