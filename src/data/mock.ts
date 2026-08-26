@@ -69,8 +69,8 @@ export const communityPosts = [
   {
     id: 'p3',
     group: 'TDAH em casa',
-    author: 'Camila S.',
-    avatar: 'camilaS' as const,
+    author: 'Julia',
+    avatar: 'julia' as const,
     title: 'Dia difícil hoje, alguém por perto?',
     body: 'Foi um daqueles dias. Só queria dividir com quem entende.',
     replies: 22,
