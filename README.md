@@ -1,6 +1,8 @@
-# NeuroFlow
+# Vita
 
-A React Native (Expo) implementation of the **NeuroFlow** design — an app that helps parents/caregivers of neurodivergent kids run a low-pressure daily routine, with a dedicated crisis-support mode and a gentle "small advances" development tracker.
+A React Native (Expo) implementation of the **Vita** design — an app that helps parents/caregivers of neurodivergent kids run a low-pressure daily routine, with a dedicated crisis-support mode and a gentle "small advances" development tracker.
+
+> Previously named NeuroFlow; some files in the original design bundle still use that name.
 
 Built from the Claude Design handoff bundle (`../README.md`, `../chats/`, `../project/`). See that bundle for the full 36-screen visual reference and the design rationale.
 

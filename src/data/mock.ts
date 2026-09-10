@@ -87,7 +87,7 @@ export const communityGroups = [
 
 export const article = {
   title: 'Por que "quebras saudáveis" não são falhas',
-  source: 'Equipe NeuroFlow · leitura de 4 min',
+  source: 'Equipe Vita · leitura de 4 min',
   body:
     'Rotina não é sobre perfeição — é sobre previsibilidade. Quando uma pausa é combinada com antecedência, ela deixa de ser uma falha e vira parte do plano. Isso muda completamente como a criança (e o adulto) se relaciona com o dia.',
 };

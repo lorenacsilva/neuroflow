@@ -1,4 +1,4 @@
-// NeuroFlow brand palette — from neuroflow-manual-de-marca.html
+// Vita brand palette — do manual de marca (arquivo original: neuroflow-manual-de-marca.html)
 export const colors = {
   darkAzure: '#2E4B52', // base — confiança e estrutura
   greyAzure: '#7FA0AC', // apoio — serenidade

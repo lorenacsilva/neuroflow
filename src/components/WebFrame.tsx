@@ -62,7 +62,7 @@ export function WebFrame({ children }: { children: React.ReactNode }) {
           color: alpha(colors.white, 0.5),
         }}
       >
-        NeuroFlow · protótipo — melhor visto no celular
+        Vita · protótipo — melhor visto no celular
       </Text>
     </View>
   );

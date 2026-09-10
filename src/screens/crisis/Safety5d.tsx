@@ -92,7 +92,7 @@ export default function Safety5d({ navigation }: any) {
             <Text style={{ fontFamily: 'Lexend_400Regular', fontSize: 13.5, color: palette.textMuted, opacity: 0.7, textAlign: 'center' }}>Voltar para a tela anterior</Text>
           </Pressable>
           <Text style={{ fontFamily: 'Lexend_300Light', fontSize: 11, lineHeight: 17, color: palette.textFaint, opacity: 0.85, textAlign: 'center', marginTop: 14 }}>
-            O NeuroFlow não atende emergências. Em risco, ligue.
+            O Vita não atende emergências. Em risco, ligue.
           </Text>
         </View>
       </ScrollView>

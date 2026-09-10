@@ -56,7 +56,7 @@ function FeedTab() {
           <View style={{ flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between' }}>
             <View style={{ flexDirection: 'row', alignItems: 'center', gap: 8 }}>
               <LinearGradient colors={[colors.accent1, colors.accent2]} style={{ width: 8, height: 8, borderRadius: 4 }} />
-              <Text style={[type.eyebrow, { color: colors.accent2, fontSize: 10.5 }]}>Conteúdo revisado · NeuroFlow</Text>
+              <Text style={[type.eyebrow, { color: colors.accent2, fontSize: 10.5 }]}>Conteúdo revisado · Vita</Text>
             </View>
             <MoreHorizontal size={16} color={palette.textFaint} />
           </View>

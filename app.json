@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "neuroflow-app",
-    "slug": "neuroflow-app",
+    "name": "vita-app",
+    "slug": "vita-app",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -24,7 +24,7 @@
       "bundler": "metro"
     },
     "experiments": {
-      "baseUrl": "/neuroflow"
+      "baseUrl": "/vita"
     }
   }
 }

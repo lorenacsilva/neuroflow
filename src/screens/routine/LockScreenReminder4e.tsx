@@ -27,7 +27,7 @@ export default function LockScreenReminder4e({ navigation }: any) {
           <View style={{ flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', marginBottom: 10 }}>
             <View style={{ flexDirection: 'row', alignItems: 'center', gap: 9 }}>
               <LinearGradient colors={[colors.accent1, colors.accent2]} style={{ width: 20, height: 20, borderRadius: 6 }} />
-              <Text style={[type.eyebrow, { color: colors.accent2, fontSize: 10.5 }]}>NeuroFlow</Text>
+              <Text style={[type.eyebrow, { color: colors.accent2, fontSize: 10.5 }]}>Vita</Text>
             </View>
             <Text style={{ fontFamily: 'Lexend_300Light', fontSize: 11.5, color: colors.darkAzure, opacity: 0.5 }}>agora</Text>
           </View>

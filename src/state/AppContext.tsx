@@ -28,7 +28,7 @@ export type AppState = {
   phaseAttempts: number; // attempts registered on the current phase step (6b/6c)
 };
 
-const STORAGE_KEY = 'neuroflow.demo.v1';
+const STORAGE_KEY = 'vita.demo.v1';
 
 const initialState: AppState = {
   hasOnboarded: false,
