@@ -19,6 +19,7 @@ import {
 import { ThemeProvider, useTheme } from './src/theme/ThemeProvider';
 import { AppProvider, useApp } from './src/state/AppContext';
 import { RootNavigator } from './src/navigation/RootNavigator';
+import { WebFrame } from './src/components/WebFrame';
 
 function LoadingScreen() {
   return (
@@ -51,12 +52,14 @@ export default function App() {
   if (!bricolageLoaded || !lexendLoaded) return <LoadingScreen />;
 
   return (
-    <SafeAreaProvider>
-      <ThemeProvider>
-        <AppProvider>
-          <AppShell />
-        </AppProvider>
-      </ThemeProvider>
-    </SafeAreaProvider>
+    <WebFrame>
+      <SafeAreaProvider>
+        <ThemeProvider>
+          <AppProvider>
+            <AppShell />
+          </AppProvider>
+        </ThemeProvider>
+      </SafeAreaProvider>
+    </WebFrame>
   );
 }
